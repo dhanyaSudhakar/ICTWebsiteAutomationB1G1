@@ -18,4 +18,9 @@ public class AutomationConstants {
 	
 	public static final String ADMINUSER = "Admin User";
 	
+	public static final String LOGINURL= "http://64.227.132.109/adminpage";
+	
+	public static final String ADMINPAGEURL = "ICT Academy of Kerala";
+	
+	
 }

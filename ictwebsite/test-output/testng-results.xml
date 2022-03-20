@@ -1,257 +1,745 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="18" passed="16" failed="2" skipped="0">
+<testng-results ignored="0" total="19" passed="10" failed="9" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2022-03-20T15:13:52 IST" name="Default suite" finished-at="2022-03-20T15:21:29 IST" duration-ms="456726">
+  <suite started-at="2022-03-20T18:22:52 IST" name="Default suite" finished-at="2022-03-20T18:31:45 IST" duration-ms="533231">
     <groups>
     </groups>
-    <test started-at="2022-03-20T15:13:52 IST" name="Default test" finished-at="2022-03-20T15:21:29 IST" duration-ms="456726">
+    <test started-at="2022-03-20T18:22:52 IST" name="Default test" finished-at="2022-03-20T18:31:45 IST" duration-ms="533231">
       <class name="com.ictwebsite.scripts.TestClass">
-        <test-method is-config="true" signature="onSetup()[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:13:52 IST" name="onSetup" finished-at="2022-03-20T15:14:02 IST" duration-ms="10393" status="PASS">
+        <test-method is-config="true" signature="onSetup()[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:22:52 IST" name="onSetup" finished-at="2022-03-20T18:23:04 IST" duration-ms="11736" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- onSetup -->
-        <test-method signature="HomePage()[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:02 IST" name="HomePage" finished-at="2022-03-20T15:14:02 IST" duration-ms="105" status="PASS">
+        <test-method signature="HomePage()[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:04 IST" name="HomePage" finished-at="2022-03-20T18:23:04 IST" duration-ms="135" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- HomePage -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:02 IST" name="tearDown" finished-at="2022-03-20T15:14:02 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:04 IST" name="tearDown" finished-at="2022-03-20T18:23:04 IST" duration-ms="3" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=HomePage status=SUCCESS method=TestClass.HomePage()[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=HomePage status=SUCCESS method=TestClass.HomePage()[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="MembershipCourses()[pri:1, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:03 IST" name="MembershipCourses" finished-at="2022-03-20T15:14:16 IST" duration-ms="13319" status="PASS">
+        <test-method signature="verifyValidLogin()[pri:1, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:04 IST" name="verifyValidLogin" finished-at="2022-03-20T18:23:06 IST" duration-ms="2439" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [http://64.227.132.109/LandingPage] but found [http://64.227.132.109/adminpage]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [http://64.227.132.109/LandingPage] but found [http://64.227.132.109/adminpage]
+at org.testng.Assert.fail(Assert.java:99)
+at org.testng.Assert.failNotEquals(Assert.java:1037)
+at org.testng.Assert.assertEqualsImpl(Assert.java:140)
+at org.testng.Assert.assertEquals(Assert.java:122)
+at org.testng.Assert.assertEquals(Assert.java:629)
+at org.testng.Assert.assertEquals(Assert.java:639)
+at com.ictwebsite.scripts.TestClass.verifyValidLogin(TestClass.java:546)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyValidLogin -->
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:06 IST" name="tearDown" finished-at="2022-03-20T18:23:07 IST" duration-ms="605" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=verifyValidLogin status=FAILURE method=TestClass.verifyValidLogin()[pri:1, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method signature="MembershipCourses()[pri:2, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:07 IST" name="MembershipCourses" finished-at="2022-03-20T18:23:10 IST" duration-ms="3203" status="FAIL">
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element <a _ngcontent-hml-c32="" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link ps-2 d-flex cursor-pointer align-items-center">...</a> is not clickable at point (790, 43). Other element would receive the click: <div _ngcontent-hml-c32="" id="exampleModalForm" tabindex="-1" aria-labelledby="exampleModalForm" class="modal fade show" aria-modal="true" role="dialog" style="display: block;">...</div>
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element <a _ngcontent-hml-c32="" id="dropdownMenuDocs" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link ps-2 d-flex cursor-pointer align-items-center">...</a> is not clickable at point (790, 43). Other element would receive the click: <div _ngcontent-hml-c32="" id="exampleModalForm" tabindex="-1" aria-labelledby="exampleModalForm" class="modal fade show" aria-modal="true" role="dialog" style="display: block;">...</div>
+  (Session info: chrome=96.0.4664.110)
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:285)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:84)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.ictwebsite.pages.HomePage.clickMembershipMenu(HomePage.java:83)
+at com.ictwebsite.scripts.TestClass.MembershipCourses(TestClass.java:78)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- MembershipCourses -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:16 IST" name="tearDown" finished-at="2022-03-20T15:14:16 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:10 IST" name="tearDown" finished-at="2022-03-20T18:23:11 IST" duration-ms="586" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=MembershipCourses status=SUCCESS method=TestClass.MembershipCourses()[pri:1, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=MembershipCourses status=FAILURE method=TestClass.MembershipCourses()[pri:2, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CorporateMembership()[pri:2, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:16 IST" name="CorporateMembership" finished-at="2022-03-20T15:14:39 IST" duration-ms="22834" status="PASS">
+        <test-method signature="CorporateMembership()[pri:3, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:11 IST" name="CorporateMembership" finished-at="2022-03-20T18:23:45 IST" duration-ms="34068" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-academiccollaborations/app-header/div[1]/div/div/nav/div/img"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-academiccollaborations/app-header/div[1]/div/div/nav/div/img}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-academiccollaborations/app-header/div[1]/div/div/nav/div/img"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-academiccollaborations/app-header/div[1]/div/div/nav/div/img}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.ictwebsite.pages.HomePage.clickICTLogo(HomePage.java:122)
+at com.ictwebsite.scripts.TestClass.CorporateMembership(TestClass.java:97)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CorporateMembership -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:39 IST" name="tearDown" finished-at="2022-03-20T15:14:39 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:45 IST" name="tearDown" finished-at="2022-03-20T18:23:45 IST" duration-ms="606" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CorporateMembership status=SUCCESS method=TestClass.CorporateMembership()[pri:2, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=CorporateMembership status=FAILURE method=TestClass.CorporateMembership()[pri:3, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CorporateMembershipForm()[pri:3, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:14:39 IST" name="CorporateMembershipForm" finished-at="2022-03-20T15:15:03 IST" duration-ms="24711" status="PASS">
+        <test-method signature="CorporateMembershipForm()[pri:4, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:23:45 IST" name="CorporateMembershipForm" finished-at="2022-03-20T18:24:17 IST" duration-ms="31118" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-corporateform/header/div[2]/section/div/div/div/form/div/div[1]/div/div/input"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-corporateform/header/div[2]/section/div/div/div/form/div/div[1]/div/div/input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-corporateform/header/div[2]/section/div/div/div/form/div/div[1]/div/div/input"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-corporateform/header/div[2]/section/div/div/div/form/div/div[1]/div/div/input}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+at com.ictwebsite.pages.CorporateMembershipForm.clickName(CorporateMembershipForm.java:136)
+at com.ictwebsite.scripts.TestClass.CorporateMembershipForm(TestClass.java:112)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CorporateMembershipForm -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:15:03 IST" name="tearDown" finished-at="2022-03-20T15:15:03 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:24:17 IST" name="tearDown" finished-at="2022-03-20T18:24:17 IST" duration-ms="665" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CorporateMembershipForm status=SUCCESS method=TestClass.CorporateMembershipForm()[pri:3, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=CorporateMembershipForm status=FAILURE method=TestClass.CorporateMembershipForm()[pri:4, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="CorporateMembershipPointofContact()[pri:4, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:15:03 IST" name="CorporateMembershipPointofContact" finished-at="2022-03-20T15:15:43 IST" duration-ms="39289" status="PASS">
+        <test-method signature="CorporateMembershipPointofContact()[pri:5, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:24:17 IST" name="CorporateMembershipPointofContact" finished-at="2022-03-20T18:24:50 IST" duration-ms="33278" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"css selector","selector":"*[name='nameofContact']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=name, value=nameofContact}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"css selector","selector":"*[name='nameofContact']"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=name, value=nameofContact}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByName(RemoteWebDriver.java:404)
+at org.openqa.selenium.By$ByName.findElement(By.java:284)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.sendKeys(Unknown Source)
+at com.ictwebsite.pages.CorporateMembershipForm.clickNamePointofContact(CorporateMembershipForm.java:200)
+at com.ictwebsite.scripts.TestClass.CorporateMembershipPointofContact(TestClass.java:153)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- CorporateMembershipPointofContact -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:15:43 IST" name="tearDown" finished-at="2022-03-20T15:15:43 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:24:50 IST" name="tearDown" finished-at="2022-03-20T18:24:51 IST" duration-ms="509" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=CorporateMembershipPointofContact status=SUCCESS method=TestClass.CorporateMembershipPointofContact()[pri:4, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=CorporateMembershipPointofContact status=FAILURE method=TestClass.CorporateMembershipPointofContact()[pri:5, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="PartnershipMenu()[pri:5, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:15:43 IST" name="PartnershipMenu" finished-at="2022-03-20T15:16:09 IST" duration-ms="26575" status="PASS">
+        <test-method signature="PartnershipMenu()[pri:6, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:24:51 IST" name="PartnershipMenu" finished-at="2022-03-20T18:26:26 IST" duration-ms="95045" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-corporateform/app-header/div[1]/div/div/nav/div/div/ul/li[4]"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-corporateform/app-header/div[1]/div/div/nav/div/div/ul/li[4]}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-corporateform/app-header/div[1]/div/div/nav/div/div/ul/li[4]"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-corporateform/app-header/div[1]/div/div/nav/div/div/ul/li[4]}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.ictwebsite.pages.HomePage.clickMembershipMenuu(HomePage.java:147)
+at com.ictwebsite.scripts.TestClass.PartnershipMenu(TestClass.java:212)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartnershipMenu -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:16:09 IST" name="tearDown" finished-at="2022-03-20T15:16:09 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:26:26 IST" name="tearDown" finished-at="2022-03-20T18:26:27 IST" duration-ms="958" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PartnershipMenu status=SUCCESS method=TestClass.PartnershipMenu()[pri:5, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=PartnershipMenu status=FAILURE method=TestClass.PartnershipMenu()[pri:6, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="PartnershipForm()[pri:6, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:16:09 IST" name="PartnershipForm" finished-at="2022-03-20T15:16:45 IST" duration-ms="35751" status="PASS">
+        <test-method signature="PartnershipForm()[pri:7, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:26:27 IST" name="PartnershipForm" finished-at="2022-03-20T18:26:58 IST" duration-ms="31039" status="FAIL">
+          <exception class="org.openqa.selenium.NoSuchElementException">
+            <message>
+              <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-partenshipform/header/div[2]/section/div/div/div/div/div[2]/form/div/div[1]/div[1]/div/input"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-partenshipform/header/div[2]/section/div/div/div/div/div[2]/form/div/div[1]/div[1]/div/input}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-partenshipform/header/div[2]/section/div/div/div/div/div[2]/form/div/div[1]/div[1]/div/input"}
+  (Session info: chrome=96.0.4664.110)
+For documentation on this error, please visit: https://www.seleniumhq.org/exceptions/no_such_element.html
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
+*** Element info: {Using=xpath, value=/html/body/app-root/app-partenshipform/header/div[2]/section/div/div/div/div/div[2]/form/div/div[1]/div[1]/div/input}
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:187)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:122)
+at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+at com.sun.proxy.$Proxy13.click(Unknown Source)
+at com.ictwebsite.pages.PartnershipForm.clickAvgfrshrValPointofContact(PartnershipForm.java:70)
+at com.ictwebsite.scripts.TestClass.PartnershipForm(TestClass.java:223)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
+at org.testng.internal.TestInvoker.invokeMethod(TestInvoker.java:598)
+at org.testng.internal.TestInvoker.invokeTestMethod(TestInvoker.java:173)
+at org.testng.internal.MethodRunner.runInSequence(MethodRunner.java:46)
+at org.testng.internal.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:824)
+at org.testng.internal.TestInvoker.invokeTestMethods(TestInvoker.java:146)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:146)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1541)
+at org.testng.TestRunner.privateRun(TestRunner.java:794)
+at org.testng.TestRunner.run(TestRunner.java:596)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+at org.testng.TestNG.runSuites(TestNG.java:1063)
+at org.testng.TestNG.run(TestNG.java:1031)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PartnershipForm -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:16:45 IST" name="tearDown" finished-at="2022-03-20T15:16:45 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:26:58 IST" name="tearDown" finished-at="2022-03-20T18:26:59 IST" duration-ms="917" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PartnershipForm status=SUCCESS method=TestClass.PartnershipForm()[pri:6, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=PartnershipForm status=FAILURE method=TestClass.PartnershipForm()[pri:7, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Login_Home()[pri:7, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:16:45 IST" name="Login_Home" finished-at="2022-03-20T15:16:58 IST" duration-ms="12683" status="PASS">
+        <test-method signature="Login_Home()[pri:8, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:26:59 IST" name="Login_Home" finished-at="2022-03-20T18:27:12 IST" duration-ms="13288" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login_Home -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:16:58 IST" name="tearDown" finished-at="2022-03-20T15:16:58 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:12 IST" name="tearDown" finished-at="2022-03-20T18:27:12 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Login_Home status=SUCCESS method=TestClass.Login_Home()[pri:7, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=Login_Home status=SUCCESS method=TestClass.Login_Home()[pri:8, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="IndustrialPartnersVerifyEmptyData()[pri:8, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:16:58 IST" name="IndustrialPartnersVerifyEmptyData" finished-at="2022-03-20T15:17:12 IST" duration-ms="13857" status="PASS">
+        <test-method signature="IndustrialPartnersVerifyEmptyData()[pri:9, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:12 IST" name="IndustrialPartnersVerifyEmptyData" finished-at="2022-03-20T18:27:26 IST" duration-ms="14127" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IndustrialPartnersVerifyEmptyData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:12 IST" name="tearDown" finished-at="2022-03-20T15:17:12 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:26 IST" name="tearDown" finished-at="2022-03-20T18:27:26 IST" duration-ms="9" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=IndustrialPartnersVerifyEmptyData status=SUCCESS method=TestClass.IndustrialPartnersVerifyEmptyData()[pri:8, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=IndustrialPartnersVerifyEmptyData status=SUCCESS method=TestClass.IndustrialPartnersVerifyEmptyData()[pri:9, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="IndustrialPartnersVerifyWithData()[pri:9, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:12 IST" name="IndustrialPartnersVerifyWithData" finished-at="2022-03-20T15:17:24 IST" duration-ms="12710" status="PASS">
+        <test-method signature="IndustrialPartnersVerifyWithData()[pri:10, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:26 IST" name="IndustrialPartnersVerifyWithData" finished-at="2022-03-20T18:27:40 IST" duration-ms="13198" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- IndustrialPartnersVerifyWithData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:24 IST" name="tearDown" finished-at="2022-03-20T15:17:24 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:40 IST" name="tearDown" finished-at="2022-03-20T18:27:40 IST" duration-ms="4" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=IndustrialPartnersVerifyWithData status=SUCCESS method=TestClass.IndustrialPartnersVerifyWithData()[pri:9, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=IndustrialPartnersVerifyWithData status=SUCCESS method=TestClass.IndustrialPartnersVerifyWithData()[pri:10, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="Knowledge()[pri:10, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:24 IST" name="Knowledge" finished-at="2022-03-20T15:17:27 IST" duration-ms="3170" status="PASS">
+        <test-method signature="Knowledge()[pri:11, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:40 IST" name="Knowledge" finished-at="2022-03-20T18:27:43 IST" duration-ms="3211" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Knowledge -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:27 IST" name="tearDown" finished-at="2022-03-20T15:17:27 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:43 IST" name="tearDown" finished-at="2022-03-20T18:27:43 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=Knowledge status=SUCCESS method=TestClass.Knowledge()[pri:10, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=Knowledge status=SUCCESS method=TestClass.Knowledge()[pri:11, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="KnowledgePartnersVerifyEmptyData()[pri:11, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:27 IST" name="KnowledgePartnersVerifyEmptyData" finished-at="2022-03-20T15:17:38 IST" duration-ms="10546" status="PASS">
+        <test-method signature="KnowledgePartnersVerifyEmptyData()[pri:12, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:43 IST" name="KnowledgePartnersVerifyEmptyData" finished-at="2022-03-20T18:27:54 IST" duration-ms="10762" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KnowledgePartnersVerifyEmptyData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:38 IST" name="tearDown" finished-at="2022-03-20T15:17:38 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:54 IST" name="tearDown" finished-at="2022-03-20T18:27:54 IST" duration-ms="0" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KnowledgePartnersVerifyEmptyData status=SUCCESS method=TestClass.KnowledgePartnersVerifyEmptyData()[pri:11, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=KnowledgePartnersVerifyEmptyData status=SUCCESS method=TestClass.KnowledgePartnersVerifyEmptyData()[pri:12, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="KnowledgePartnersVerifyWithData()[pri:12, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:38 IST" name="KnowledgePartnersVerifyWithData" finished-at="2022-03-20T15:17:52 IST" duration-ms="13704" status="PASS">
+        <test-method signature="KnowledgePartnersVerifyWithData()[pri:13, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:27:54 IST" name="KnowledgePartnersVerifyWithData" finished-at="2022-03-20T18:28:07 IST" duration-ms="13877" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- KnowledgePartnersVerifyWithData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:52 IST" name="tearDown" finished-at="2022-03-20T15:17:52 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:07 IST" name="tearDown" finished-at="2022-03-20T18:28:07 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=KnowledgePartnersVerifyWithData status=SUCCESS method=TestClass.KnowledgePartnersVerifyWithData()[pri:12, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=KnowledgePartnersVerifyWithData status=SUCCESS method=TestClass.KnowledgePartnersVerifyWithData()[pri:13, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="PatronsDashboard()[pri:13, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:52 IST" name="PatronsDashboard" finished-at="2022-03-20T15:17:55 IST" duration-ms="3172" status="PASS">
+        <test-method signature="PatronsDashboard()[pri:14, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:07 IST" name="PatronsDashboard" finished-at="2022-03-20T18:28:11 IST" duration-ms="3219" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PatronsDashboard -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:55 IST" name="tearDown" finished-at="2022-03-20T15:17:55 IST" duration-ms="0" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:11 IST" name="tearDown" finished-at="2022-03-20T18:28:11 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PatronsDashboard status=SUCCESS method=TestClass.PatronsDashboard()[pri:13, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=PatronsDashboard status=SUCCESS method=TestClass.PatronsDashboard()[pri:14, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="PatronsAddwithEmpty()[pri:14, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:17:55 IST" name="PatronsAddwithEmpty" finished-at="2022-03-20T15:18:06 IST" duration-ms="10604" status="PASS">
+        <test-method signature="PatronsAddwithEmpty()[pri:15, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:11 IST" name="PatronsAddwithEmpty" finished-at="2022-03-20T18:28:22 IST" duration-ms="10858" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PatronsAddwithEmpty -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:18:06 IST" name="tearDown" finished-at="2022-03-20T15:18:06 IST" duration-ms="1" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:22 IST" name="tearDown" finished-at="2022-03-20T18:28:22 IST" duration-ms="1" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PatronsAddwithEmpty status=SUCCESS method=TestClass.PatronsAddwithEmpty()[pri:14, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=PatronsAddwithEmpty status=SUCCESS method=TestClass.PatronsAddwithEmpty()[pri:15, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="PatronsAddwithData()[pri:15, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:18:06 IST" name="PatronsAddwithData" finished-at="2022-03-20T15:18:18 IST" duration-ms="12695" status="PASS">
+        <test-method signature="PatronsAddwithData()[pri:16, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:22 IST" name="PatronsAddwithData" finished-at="2022-03-20T18:28:35 IST" duration-ms="12963" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- PatronsAddwithData -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:18:18 IST" name="tearDown" finished-at="2022-03-20T15:18:18 IST" duration-ms="2" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:35 IST" name="tearDown" finished-at="2022-03-20T18:28:35 IST" duration-ms="2" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=PatronsAddwithData status=SUCCESS method=TestClass.PatronsAddwithData()[pri:15, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=PatronsAddwithData status=SUCCESS method=TestClass.PatronsAddwithData()[pri:16, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AdminUserDashboard()[pri:16, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:18:18 IST" name="AdminUserDashboard" finished-at="2022-03-20T15:21:23 IST" duration-ms="185073" status="FAIL">
+        <test-method signature="AdminUserDashboard()[pri:17, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:28:35 IST" name="AdminUserDashboard" finished-at="2022-03-20T18:31:40 IST" duration-ms="185127" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[no such element: Unable to locate element: {"method":"xpath","selector":"/html/body/app-root/app-dashboard/body/aside/app-sidenavbar/aside/div[2]/ul/div/ul/li[13]/a"}
@@ -260,8 +748,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.VeSUgo}, goog:chromeOptions: {debuggerAddress: localhost:41167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4185cb726ddd590db1da8a9de527f2a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
 *** Element info: {Using=xpath, value=/html/body/app-root/app-dashboard/body/aside/app-sidenavbar/aside/div[2]/ul/div/ul/li[13]/a}]]>
             </message>
             <full-stacktrace>
@@ -271,8 +759,8 @@ For documentation on this error, please visit: https://www.seleniumhq.org/except
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.VeSUgo}, goog:chromeOptions: {debuggerAddress: localhost:41167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4185cb726ddd590db1da8a9de527f2a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
 *** Element info: {Using=xpath, value=/html/body/app-root/app-dashboard/body/aside/app-sidenavbar/aside/div[2]/ul/div/ul/li[13]/a}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -292,7 +780,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.click(Unknown Source)
 at com.ictwebsite.pages.AdminUser.clickadminUserDashboard(AdminUser.java:132)
-at com.ictwebsite.scripts.TestClass.AdminUserDashboard(TestClass.java:431)
+at com.ictwebsite.scripts.TestClass.AdminUserDashboard(TestClass.java:433)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -327,18 +815,18 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminUserDashboard -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:21:23 IST" name="tearDown" finished-at="2022-03-20T15:21:24 IST" duration-ms="237" status="PASS">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:31:40 IST" name="tearDown" finished-at="2022-03-20T18:31:40 IST" duration-ms="321" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AdminUserDashboard status=FAILURE method=TestClass.AdminUserDashboard()[pri:16, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=AdminUserDashboard status=FAILURE method=TestClass.AdminUserDashboard()[pri:17, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method signature="AdminUserDashboardAction()[pri:17, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:21:24 IST" name="AdminUserDashboardAction" finished-at="2022-03-20T15:21:29 IST" duration-ms="5031" status="FAIL">
+        <test-method signature="AdminUserDashboardAction()[pri:18, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:31:40 IST" name="AdminUserDashboardAction" finished-at="2022-03-20T18:31:45 IST" duration-ms="5013" status="FAIL">
           <exception class="org.openqa.selenium.WebDriverException">
             <message>
               <![CDATA[chrome not reachable
@@ -346,8 +834,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.VeSUgo}, goog:chromeOptions: {debuggerAddress: localhost:41167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4185cb726ddd590db1da8a9de527f2a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
 *** Element info: {Using=xpath, value=/html/body/app-root/app-dashboard/body/aside/app-sidenavbar/aside/div[2]/ul/div/ul/li[13]/a}]]>
             </message>
             <full-stacktrace>
@@ -356,8 +844,8 @@ Session ID: f4185cb726ddd590db1da8a9de527f2a
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.VeSUgo}, goog:chromeOptions: {debuggerAddress: localhost:41167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4185cb726ddd590db1da8a9de527f2a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
 *** Element info: {Using=xpath, value=/html/body/app-root/app-dashboard/body/aside/app-sidenavbar/aside/div[2]/ul/div/ul/li[13]/a}
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
@@ -377,7 +865,7 @@ at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(Def
 at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
 at com.sun.proxy.$Proxy13.click(Unknown Source)
 at com.ictwebsite.pages.AdminUser.clickadminUserDashboard(AdminUser.java:132)
-at com.ictwebsite.scripts.TestClass.AdminUserDashboardAction(TestClass.java:484)
+at com.ictwebsite.scripts.TestClass.AdminUserDashboardAction(TestClass.java:487)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -412,11 +900,11 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- AdminUserDashboardAction -->
-        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:21:29 IST" name="tearDown" finished-at="2022-03-20T15:21:29 IST" duration-ms="19" status="FAIL">
+        <test-method is-config="true" signature="tearDown(org.testng.ITestResult)[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:31:45 IST" name="tearDown" finished-at="2022-03-20T18:31:45 IST" duration-ms="15" status="FAIL">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=AdminUserDashboardAction status=FAILURE method=TestClass.AdminUserDashboardAction()[pri:17, instance:com.ictwebsite.scripts.TestClass@636be97c] output={null}]]]>
+                <![CDATA[[TestResult name=AdminUserDashboardAction status=FAILURE method=TestClass.AdminUserDashboardAction()[pri:18, instance:com.ictwebsite.scripts.TestClass@50a638b5] output={null}]]]>
               </value>
             </param>
           </params>
@@ -427,8 +915,8 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.VeSUgo}, goog:chromeOptions: {debuggerAddress: localhost:41167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4185cb726ddd590db1da8a9de527f2a]]>
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c]]>
             </message>
             <full-stacktrace>
               <![CDATA[org.openqa.selenium.WebDriverException: chrome not reachable
@@ -436,8 +924,8 @@ Session ID: f4185cb726ddd590db1da8a9de527f2a]]>
 Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
 System info: host: 'kite-Acer-one-14-Z476', ip: '127.0.1.1', os.name: 'Linux', os.arch: 'amd64', os.version: '4.15.0-45-generic', java.version: '11.0.11'
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.VeSUgo}, goog:chromeOptions: {debuggerAddress: localhost:41167}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
-Session ID: f4185cb726ddd590db1da8a9de527f2a
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 96.0.4664.110, chrome: {chromedriverVersion: 96.0.4664.18 (b8887b3d1742a..., userDataDir: /tmp/.com.google.Chrome.KrAkB7}, goog:chromeOptions: {debuggerAddress: localhost:39639}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: LINUX, platformName: LINUX, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:virtualAuthenticators: true}
+Session ID: 85a95015b5ba861b219d1cde14fca28c
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -452,7 +940,7 @@ at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:609)
 at org.openqa.selenium.remote.RemoteWebDriver.getScreenshotAs(RemoteWebDriver.java:295)
 at com.ictwebsite.scripts.TestBase.takeScreenShot(TestBase.java:85)
 at com.ictwebsite.scripts.TestBase.tearDown(TestBase.java:79)
-at jdk.internal.reflect.GeneratedMethodAccessor4.invoke(Unknown Source)
+at jdk.internal.reflect.GeneratedMethodAccessor3.invoke(Unknown Source)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
 at java.base/java.lang.reflect.Method.invoke(Method.java:566)
 at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:133)
@@ -490,7 +978,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.ictwebsite.scripts.TestClass@636be97c]" started-at="2022-03-20T15:21:29 IST" name="quitBrowser" finished-at="2022-03-20T15:21:29 IST" duration-ms="48" status="PASS">
+        <test-method is-config="true" signature="quitBrowser()[pri:0, instance:com.ictwebsite.scripts.TestClass@50a638b5]" started-at="2022-03-20T18:31:45 IST" name="quitBrowser" finished-at="2022-03-20T18:31:45 IST" duration-ms="70" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitBrowser -->

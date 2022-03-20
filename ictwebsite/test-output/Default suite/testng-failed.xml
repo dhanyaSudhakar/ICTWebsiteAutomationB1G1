@@ -6,10 +6,17 @@
       <class name="com.ictwebsite.scripts.TestClass">
         <methods>
           <include name="AdminUserDashboardAction"/>
+          <include name="CorporateMembershipPointofContact"/>
+          <include name="verifyValidLogin"/>
           <include name="onSetup"/>
+          <include name="CorporateMembership"/>
           <include name="quitBrowser"/>
           <include name="AdminUserDashboard"/>
+          <include name="CorporateMembershipForm"/>
+          <include name="MembershipCourses"/>
           <include name="tearDown"/>
+          <include name="PartnershipMenu"/>
+          <include name="PartnershipForm"/>
         </methods>
       </class> <!-- com.ictwebsite.scripts.TestClass -->
     </classes>

@@ -3,9 +3,7 @@ package com.ictwebsite.scripts;
 import org.testng.annotations.Test;
 import org.testng.AssertJUnit;
 import java.io.IOException;
-import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.Alert;
 import org.testng.Assert;
 
 
@@ -15,10 +13,13 @@ import com.ictwebsite.pages.AdminUser;
 import com.ictwebsite.pages.CorporateMembershipForm;
 import com.ictwebsite.pages.HomePage;
 import com.ictwebsite.pages.LoginPage;
+import com.ictwebsite.pages.LogoutPage;
 import com.ictwebsite.pages.IndustrialPartners;
 import com.ictwebsite.pages.KnowledgePartners;
+import com.ictwebsite.pages.Login;
 import com.ictwebsite.pages.Patrons;
 import com.ictwebsite.utilities.ExcelUtility;
+import com.ictwebsite.pages.AdminPage;
 
 
 public class TestClass extends TestBase{
@@ -33,8 +34,9 @@ public class TestClass extends TestBase{
 	KnowledgePartners ObjKnwldgPrtnrs;
 	Patrons ObjPatrons;
 	AdminUser objAdminUser;
-
-
+	LogoutPage objLogout;
+	AdminPage objAdd;
+	
 @Test(priority=0)
 public void HomePage() throws IOException, InterruptedException {
     	   	
@@ -61,11 +63,14 @@ public void HomePage() throws IOException, InterruptedException {
 
 	//Creating Patrons  Object
 	objAdminUser = new AdminUser(driver);
+	
+	//Creating Admin Page
+	objAdd = new AdminPage(driver);
  
 }
 
 //@Test(priority=1)
-@Test(priority=1)
+@Test(priority=2)
 public void MembershipCourses() throws IOException, InterruptedException {
 	
 	
@@ -89,7 +94,7 @@ public void MembershipCourses() throws IOException, InterruptedException {
 
 
 
-@Test(priority=2)
+@Test(priority=3)
 public void CorporateMembership() throws IOException, InterruptedException {
 	
 	objLogin.clickICTLogo();
@@ -102,7 +107,7 @@ public void CorporateMembership() throws IOException, InterruptedException {
 
 
 
-@Test(priority=3)
+@Test(priority=4)
 public void CorporateMembershipForm() throws IOException, InterruptedException {
 	
 	//getting the data from the excel sheet
@@ -137,7 +142,7 @@ public void CorporateMembershipForm() throws IOException, InterruptedException {
 
 
 
-@Test(priority=4)
+@Test(priority=5)
 public void CorporateMembershipPointofContact() throws IOException, InterruptedException {
 	
 
@@ -203,7 +208,7 @@ public void CorporateMembershipPointofContact() throws IOException, InterruptedE
 }
 
 
-@Test(priority=5)
+@Test(priority=6)
 //@Test(priority=5)
 public void PartnershipMenu() throws IOException, InterruptedException {
 	
@@ -215,7 +220,7 @@ public void PartnershipMenu() throws IOException, InterruptedException {
 }
 
 
-@Test(priority=6)
+@Test(priority=7)
 public void PartnershipForm() throws IOException, InterruptedException {
 	
 	ObjPartForm.clickAvgfrshrValPointofContact();
@@ -276,7 +281,7 @@ public void PartnershipForm() throws IOException, InterruptedException {
 	
 }
 
-@Test(priority=7)
+@Test(priority=8)
 public void Login_Home() throws IOException, InterruptedException {
 
 	
@@ -298,7 +303,7 @@ public void Login_Home() throws IOException, InterruptedException {
 		
 }
 
-@Test(priority=8)
+@Test(priority=9)
 public void IndustrialPartnersVerifyEmptyData() throws IOException, InterruptedException {
 	
 	ObjIdtrlPrtnrs.clickIndustral();
@@ -318,7 +323,7 @@ public void IndustrialPartnersVerifyEmptyData() throws IOException, InterruptedE
 
 }
 
-@Test(priority=9)
+@Test(priority=10)
 public void IndustrialPartnersVerifyWithData() throws IOException, InterruptedException {
 
 	ObjIdtrlPrtnrs.clickAddIndustral();	
@@ -340,14 +345,14 @@ public void IndustrialPartnersVerifyWithData() throws IOException, InterruptedEx
 }
 
 
-@Test(priority=10)
+@Test(priority=11)
 public void Knowledge() throws IOException, InterruptedException {
 	ObjKnwldgPrtnrs.clickKnowledge();
 
 }
 
 
-@Test(priority=11)
+@Test(priority=12)
 public void KnowledgePartnersVerifyEmptyData() throws IOException, InterruptedException {
 
 	ObjKnwldgPrtnrs.clickAddKnowledge();
@@ -362,7 +367,7 @@ public void KnowledgePartnersVerifyEmptyData() throws IOException, InterruptedEx
 
 }
 
-@Test(priority=12)
+@Test(priority=13)
 public void KnowledgePartnersVerifyWithData() throws IOException, InterruptedException {
 
 	ObjKnwldgPrtnrs.clickAddKnowledge();	
@@ -382,7 +387,7 @@ public void KnowledgePartnersVerifyWithData() throws IOException, InterruptedExc
 
 }
 
-@Test(priority=13)
+@Test(priority=14)
 public void PatronsDashboard() throws IOException, InterruptedException {
 
 	ObjPatrons.clickpatronDashboard();
@@ -390,7 +395,7 @@ public void PatronsDashboard() throws IOException, InterruptedException {
 }
 
 
-@Test(priority=14)
+@Test(priority=15)
 public void PatronsAddwithEmpty() throws IOException, InterruptedException {
 
 	ObjPatrons.clickAddpatron();
@@ -406,7 +411,7 @@ public void PatronsAddwithEmpty() throws IOException, InterruptedException {
 
 }
 
-@Test(priority=15)
+@Test(priority=16)
 public void PatronsAddwithData() throws IOException, InterruptedException {
 	
 	ObjPatrons.clickAddpatron();	
@@ -425,7 +430,7 @@ public void PatronsAddwithData() throws IOException, InterruptedException {
 }
 
 
-@Test(priority=16)
+@Test(priority=17)
 public void AdminUserDashboard() throws IOException, InterruptedException {
 
 	objAdminUser.clickadminUserDashboard();
@@ -478,9 +483,10 @@ public void AdminUserDashboard() throws IOException, InterruptedException {
 
 }
 
-@Test(priority=17)
+@Test(priority=18)
 public void AdminUserDashboardAction() throws IOException, InterruptedException {
 
+	objAdminUser= new AdminUser(driver);
 	objAdminUser.clickadminUserDashboard();
 	System.out.println("clickadminUserDashboard");
 	
@@ -521,5 +527,81 @@ public void AdminUserDashboardAction() throws IOException, InterruptedException 
 	objAdminUser.clickyesDelete();
 	
 }
+
+
+	
+	@Test(priority=1)
+
+	public void verifyValidLogin() throws IOException {
+		// Create Login Page object
+		Login objLogin1 = new Login(driver);
+		// login to application
+		for (int i = 0; i < 5; i++) {
+			String username = ExcelUtility.getCellData(i, 0);
+			String password = ExcelUtility.getCellData(i, 1);
+			objLogin1.clickLogin();
+			objLogin1.setUserName(username);
+			objLogin1.setPassword(password);
+			objLogin1.clickSignin();
+			String expectedUrl = AutomationConstants.LOGINURL;
+			String actualUrl = driver.getCurrentUrl();
+			Assert.assertEquals(expectedUrl, actualUrl);
+			objLogout.clickLogout();
+		}
+	}
+
+    @Test(priority=19)
+    public void Login_Home_UserAdmin() throws IOException, InterruptedException {
+
+    	objLogout.clickLogout();
+    	objLogin.clickLogin();
+    	
+    	//Assertion to Check where the entered email and data from input sheet are same
+    	String UEmail= ExcelUtility.getCellData(8,0);
+    	ObjLoginPage.setEmail(UEmail);
+    	Assert.assertEquals(UEmail, ObjLoginPage.matchEmail());
+    	
+    	//Assertion to Check where the entered password and data from input sheet are same
+    	String UPassword= ExcelUtility.getCellData(8,1);
+    	ObjLoginPage.clickPassword(UPassword);
+    	Assert.assertEquals(UPassword, ObjLoginPage.matchPassword());
+    	
+    	ObjLoginPage.clickSignIn();
+    	
+    	objLogin.scrollDown();
+    		
+    }
+    
+
+  	
+
+  	//user admin page all functions
+  	@Test(priority=20)
+  	
+  	public void verifyValidAddon2() throws IOException, InterruptedException {
+  		objLogout.clickLogout();
+    	objLogin.clickLogin();
+  		
+  		String admin = ExcelUtility.getCellData(10,0);
+  		
+  		objAdd.setTaskName(admin);
+  		objAdd.setSignin();
+  		objAdd.setTestimony();
+  		objAdd.setAcademic();
+  		objAdd.setDownload();
+  		objAdd.setCorporate();
+  		objAdd.setPartnership();
+  		objAdd.setEvent();
+  		
+  		String expectedTitle1 =AutomationConstants.ADMINPAGEURL;
+  	    String actualTitle1 =driver.getTitle();
+  	   Assert.assertEquals(expectedTitle1,actualTitle1);
+  	    }
+  	
+    
+    
+    
+    
+
 
 }
